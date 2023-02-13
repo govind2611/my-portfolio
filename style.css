@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #fdfaf3;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  width: 100vw;
+  overflow-x: hidden;
+  border: #000 2px solid;
+}
+/* header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  top: 0;
+  left: 0;
+  background-color: #fdfaf3;
+  z-index: 1000;
+}
+.title {
+  font-size: 24px;
+  margin: 0px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.title:hover {
+  color: #ff4d00;
+  transition: all 0.3s;
+}
+.name {
+  border-right: 2px solid #000;
+  padding: 24px;
+}
+.icon {
+  height: 25px;
+}
+.resume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  border-left: 2px solid #000;
+}
+
+/* main component styling */
+.main-comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-comp {
+  width: 60%;
+  border-right: 2px solid #000;
+  height: fit-content;
+}
+.right-comp {
+  width: 40%;
+  height: max-content;
+  min-height: 100vh;
+  border-top: 2px solid #000;
+  border-bottom: #000 2px solid;
+
+  background-image: url(./my-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.chips {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.chip {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.35rem 1rem;
+  text-align: center;
+  border: 2px solid #000;
+  min-width: 100px;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+.chip:hover {
+  background-color: #000;
+  color: #fdfaf3;
+  transition: all 0.3s;
+}
+.head {
+  font-size: 24px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+.para {
+  font-size: 24px;
+}
+.mydash {
+  border-bottom: 2px solid #000;
+  padding: 24px;
+  padding-top: 4rem;
+}
+.education {
+  border-bottom: 2px solid #000;
+  padding: 1.5rem;
+}
+.list {
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: coral;
+}
+a:hover {
+  color: rgb(7, 97, 153);
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.social-comp {
+  border-bottom: 2px solid #000;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-flex2 {
+  border: 2px solid #000;
+  border-radius: 100%;
+}
+.social-flex2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 1100px) {
+  .right-comp,
+  .left-comp {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-comp {
+    flex-direction: column-reverse;
+  }
+  .right-comp,
+  .left-comp {
+    width: 100%;
+  }
+  .chip {
+    font-size: 16px;
+    min-width: 0px !important;
+  }
+  .mydash {
+    margin-top: 0rem;
+  }
+  .socials-flex {
+    gap: 1rem;
+  }
+  .name,
+  .resume {
+    border: none;
+  }
+}
